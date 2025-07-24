@@ -1,0 +1,248 @@
+
+body {
+
+}
+
+.backGround01   /* 화면 배경 둥근 모서리*/
+{
+
+ border-radius: 10px;
+ background-color: black;
+ width: 99.5%;
+ height:99%;
+ position: fixed;
+ margin: 5px 0px 5px 5px;
+ box-sizing: border-box;
+ width : 100% - 40px;
+ height : 100% -40px;
+ overflow-y: scroll;
+}
+
+
+.backGround01Fixed   /* 화면 배경 둥근 모서리*/
+{
+
+ border-radius: 10px;
+ background-color: black;
+ width: 99.5%;
+ height:99%;
+ position: fixed;
+ top: 0px;
+ margin: 5px 0px 5px 5px;
+ box-sizing: border-box;
+ width : 100% - 40px;
+ height : 100% -40px;
+ overflow-y: scroll;
+}
+
+.topMenu{    /* 상단바*/
+
+background-color : dark;
+border-radius: 10px;
+box-sizing: border-box;
+height : 78px;
+position :  relative;
+left: 103px;
+width :calc(100% - 103px);
+padding-left: 0px;
+display: flex;
+
+}
+
+.side-bar {
+  border-radius: 10px;
+  position: fixed;
+  background-color: black;
+  box-sizing: border-box;
+  width: 93px;
+  height :99%;
+  text-align: center;
+  padding : 0px;
+}
+
+.content01{
+  border-radius: 10px;
+  position: fixed;
+  background-color: yellow;
+  box-sizing: border-box;
+  position :relative;
+  left: 93px;
+  top: 1px;
+  width :calc(100% - 103px);
+  height :calc(100% - 89px);
+  margin : 10px 10px 10px 10px;
+}
+
+.container-fluid{
+padding: 10px 20px 10px 0px;
+}
+
+
+#top01{   /*세줄 버튼*/
+border: 0;
+outline: 0;
+width: 55px;
+height: 55px;
+border-radius: 50%;
+background-color : #0F0F0F;
+position : relative;
+top : 12px;
+}
+
+#top01:hover{
+
+background-color: #333333;
+}
+
+
+#top02{
+box-sizing: border-box;
+height: 53px;
+width: 700px;
+border-radius: 50px 0px 0px 50px;
+font-size: 20px;
+background-color: #0F0F0F;
+border: 2px solid #333333;
+}
+
+#top02:focus{
+width: 800px;
+box-sizing: border-box;
+height: 53px;
+outline: none;
+border: 1px solid #0A6EFF;
+
+
+}
+
+
+#top03{
+box-sizing: border-box;
+height: 53px;
+width : 75px;
+border-radius: 0px 50px 50px 0px;
+border: 0;
+outline: 0;
+padding: 0px;
+}
+
+
+#topSearch{
+border: 2px solid #333333;
+}
+
+
+.topSearch01{
+text-align : center;
+}
+
+#top04{
+border: 0;
+outline: 0;
+width: 55px;
+height: 55px;
+border-radius: 50%;
+background-color : #222222;
+margin: 0px 20px;
+}
+
+#top04:hover{
+background-color: #3B3B3B;
+}
+
+#top05{
+border: 2px solid #333333;
+border-radius: 30px;
+font-size: 19px;
+width: 130px;
+height: 50px;
+background-color : #0F0F0F;
+margin: 10px 0px 0px 0px;
+color: #ffffff;
+}
+
+#top05:hover{
+background-color : #333333
+}
+
+
+#setting01{
+width: 400px;
+border: 0;
+outline: 0;
+border-radius:20px;
+background-color : #222222;
+font-size: 20px;
+font-family: 맑은고딕;
+font-color: #fafafa;
+font-wight: bold;
+text-align: justify;
+line-height: 48px; /* 줄높이 */
+left: -350px; /* y좌표 이동 */
+}
+
+#setting02{   /*top 설정 버튼 */
+
+border: 0;
+outline: 0;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color : #0F0F0F;
+
+}
+
+
+.dropdown-menu a i {
+margin:5px 20px 5px 10px;
+}
+
+
+
+
+  .side-bar ul li{
+    background-color : black;
+    padding: 0px;
+    list-style: none;
+    text-align : center;
+    margin : 0px;
+    width : 93px;
+    height: 100px;
+    border-radius : 10px;
+
+    }
+
+.side-bar ul > li > a {
+
+  display: block;
+  font-size:15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  width : 93px;
+  height: 100px;
+  border-radius : 10px;
+  margin:0px;
+
+
+
+   background-color : black;
+}
+
+
+.side-bar ul {
+
+  padding :0px;
+  margin: 0px;
+  font-color: #fafafa;
+  border-radius : 10px;
+  width : 93px;
+  height: 100px;
+
+  background-color : white;
+
+
+}
+
+
