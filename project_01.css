@@ -13,8 +13,8 @@ body {
  position: fixed;
  margin: 5px 0px 5px 5px;
  box-sizing: border-box;
- width : 100% - 40px;
- height : 100% -40px;
+ width : 100% - 80px;
+ height : 100% -80px;
  overflow-y: scroll;
 }
 
@@ -30,8 +30,8 @@ body {
  top: 0px;
  margin: 5px 0px 5px 5px;
  box-sizing: border-box;
- width : 100% - 40px;
- height : 100% -40px;
+ width : 100% - 500px;
+ height : 100% -500px;
  overflow-y: scroll;
 }
 
@@ -52,10 +52,10 @@ display: flex;
 .side-bar {
   border-radius: 10px;
   position: fixed;
-  background-color: black;
+  background-color:black;
   box-sizing: border-box;
   width: 93px;
-  height :99%;
+  height :96%;
   text-align: center;
   padding : 0px;
 }
@@ -131,11 +131,11 @@ padding: 0px;
 border: 2px solid #333333;
 }
 
-
 .topSearch01{
 text-align : center;
 }
 
+/* 음성 아이콘*/
 #top04{
 border: 0;
 outline: 0;
@@ -165,7 +165,7 @@ color: #ffffff;
 background-color : #333333
 }
 
-
+/* top 설정키 드롭다운 메뉴들*/
 #setting01{
 width: 400px;
 border: 0;
@@ -182,22 +182,18 @@ left: -350px; /* y좌표 이동 */
 }
 
 #setting02{   /*top 설정 버튼 */
-
 border: 0;
 outline: 0;
 width: 50px;
 height: 50px;
 border-radius: 50%;
 background-color : #0F0F0F;
-
 }
 
 
 .dropdown-menu a i {
 margin:5px 20px 5px 10px;
 }
-
-
 
 
   .side-bar ul li{
@@ -209,14 +205,13 @@ margin:5px 20px 5px 10px;
     width : 93px;
     height: 100px;
     border-radius : 10px;
-
     }
 
 .side-bar ul > li > a {
 
   display: block;
   font-size:15px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   text-decoration: none;
   color: #ffffff;
@@ -224,12 +219,26 @@ margin:5px 20px 5px 10px;
   height: 100px;
   border-radius : 10px;
   margin:0px;
-
-
-
-   background-color : black;
+  background-color : black;
 }
 
+/* 사이드 메뉴 버튼 */
+
+#setting03_1:hover{
+background-color: #333333;
+}
+#setting03_2:hover{
+background-color: #333333;
+}
+#setting03_3:hover{
+background-color: #333333;
+}
+#setting03_4:hover{
+background-color: #333333;
+}
+#setting03_5:hover{
+background-color: #333333;
+}
 
 .side-bar ul {
 
@@ -240,9 +249,17 @@ margin:5px 20px 5px 10px;
   width : 93px;
   height: 100px;
 
-  background-color : white;
+  }
 
 
+.play_01{
+
+width : 100%;
+height : 500px;
 }
+
+
+.play_02{}
+
 
 
