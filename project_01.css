@@ -71,6 +71,7 @@ display: flex;
   width :calc(100% - 103px);
   height :calc(100% - 89px);
   margin : 10px 10px 10px 10px;
+  padding-left: 10px;
 }
 
 .container-fluid{
@@ -251,6 +252,41 @@ background-color: #333333;
 
   }
 
+
+.contentButton01{
+
+margin : 3px 5px 20px 3px;
+background-color: black;
+}
+
+.contentButton01 button{
+
+border: 0;
+outline: 0;
+width: auto;
+min-width : 70px;
+height: 45px;
+border-radius: 10px;
+font-size:19px;
+color: white;
+background-color: #222222;
+padding: 5px 15px 5px 15px;
+margin: 0px 5px 0px 5px;
+
+
+}
+
+
+.contentButton01 button:focus{
+
+
+background-color: #F9FFFF;
+color: black;
+font-weight:Semi Bold;
+
+
+
+}
 
 .play_01{
 
