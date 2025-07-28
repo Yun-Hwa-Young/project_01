@@ -9,36 +9,33 @@
   <script src="https://kit.fontawesome.com/203ddf6e87.js" crossorigin="anonymous"></script>
   <link href="project_01.css" rel="stylesheet">
 
-
 </head>
 
 
 <body>
 
-
 <div class="backGround01">
   <!-- Sidebar -->
   <div class="side-bar">
-    <section class="side-bar__icon-box">
-      <section class="side-bar__icon-1">
-        <div></div>
-        <div></div>
-        <div></div>
-      </section>
-    </section>
     <ul>
       <li>
-        <!-- 세줄버튼 -->
-        <button type="button" id="top01" >
-          <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
-        </button>
-        <hr>
         <ul>
-          <li><a href="#" id="setting03_1"><i class="fa-solid fa-house fa-xl" style="color: #fcfcfc;"></i><br></br>홈</a></li>
-          <li><a href="#" id="setting03_2"><i class="fa-regular fa-circle-play fa-lg" style="color: #f7f7f7;"></i><br></br>Shorts</a></li>
-          <li><a href="#" id="setting03_3"><i class="fa-brands fa-square-youtube fa-lg" style="color: #f5f5f5;"></i><br></br>구독</a></li>
-          <li><a href="#" id="setting03_4"><i class="fa-regular fa-circle-user fa-xl" style="color: #fcfcfc;"></i><br></br>내페이지</a></li>
-          <li><a href="#" id="setting03_5"><i class="fa-solid fa-clock-rotate-left fa-lg" style="color: #fafafa;"></i><br></br>시청기록</a></li>
+          <li><a href="#" id="setting03_1"><i class="fa-solid fa-house fa-xl" style="color: #fcfcfc;"></i>홈</a></li>
+          <li><a href="#" id="setting03_2"><i class="fa-regular fa-circle-play fa-xl" style="color: #f7f7f7;"></i>Shorts</a></li>
+          <li><a href="#" id="setting03_3"><i class="fa-brands fa-square-youtube fa-xl" style="color: #f5f5f5;"></i>구독</a></li>
+          <hr>
+          <li><a href="#" id="setting03_4">내 페이지 > </a></li>
+          <li><a href="#" id="setting03_5"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>시청기록</a></li>
+          <li><a href="#" id="setting03_6"><i class="fa-regular fa-circle-user fa-xl" style="color: #fcfcfc;"></i>재생목록</a></li>
+          <li><a href="#" id="setting03_7"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>내동영상</a></li>
+          <li><a href="#" id="setting03_8"><i class="fa-regular fa-circle-user fa-xl" style="color: #fcfcfc;"></i>내영화</a></li>
+          <li><a href="#" id="setting03_9"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>나중에 볼 동영상</a></li>
+          <li><a href="#" id="setting03_10"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>좋아요 표시한 동영상</a></li>
+          <li><a href="#" id="setting03_11"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>오프라인 저장 동영상</a></li>
+          <hr>
+          <li><a href="#" id="setting03_12"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>디글:Diggle</a></li>
+          <li><a href="#" id="setting03_13"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>SBS 뉴스</a></li>
+
         </ul>
       </li>
     </ul>
@@ -66,12 +63,19 @@
       </button>
       화면 줄어들면 생기는 버튼  -->
 
+      <!-- 세줄버튼 -->
+      <div class="justify-content-start">
+      <button type="button" id="top01" >
+        <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
+      </button>
+        </div>
+
       <!-- Logo-->
       <a class="navbar-brand" href="#" onclick="http://localhost:63342/project_01/project_01.html?#" >
         <img
                 src="Logo.png"
-                height="48px;"
-                width="150px;"
+                height="35px;"
+                width="110px;"
                 alt="Logo"
                 loading="lazy"
         />
@@ -79,7 +83,7 @@
 
       <!-- Search form -->
       <div class="collapse navbar-collapse">
-        <div class="navbar-collapse justify-content-center">
+        <div class="navbar-collapse searchText justify-content-center">
         <form class=" d-md-flex input-group w-auto" >
           <input
                   autocomplete="off"
@@ -93,9 +97,42 @@
 
         </form>
         </div>
+
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
-          <div class="dropdown">
+
+        <!-- 만들기 -->
+          <div class="dropdown topButton01">
+            <button class="form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="setting04">
+              <a><i class="fa-solid fa-plus fa-xl" style="color: #fcfcfc;"></i>만들기</a>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
+            </ul>
+          </div>
+
+          <!-- 알림 종모양 -->
+          <div class="dropdown topButton01">
+            <button class="form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="top01">
+              <i class="fa-regular fa-bell fa-lg" style="color: #fcfcfc;"></i>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
+            </ul>
+          </div>
+
+
+
+        <!--계정 정보 -->
+
+          <div class="dropdown topButton01">
             <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="setting02">
               <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #fcfcfc;"></i>
             </button>
@@ -113,48 +150,38 @@
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>고객센터</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-circle-exclamation" style="color: #ffffff;" ></i>의견 보내기</a></li>
             </ul>
-          </div>
-          <ul>
-            <li class="nav-item">
-              <button type="button" class="" id="top05"><i class="fa-regular fa-circle-user fa-xl" id="userCircle01"></i> 로그인</button>
-            </li>
-          </ul>
-        </div>
       </div>
 
 
 
     </div>
-
-
     <!--설정 드롭다운버튼  / 로그인 버튼-->
   </nav>
 
 
+  <!--content 상단 버튼 -->
+
+
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="contentButton01" role="group" aria-label="First group">
+      <button type="button" class="">전체</button>
+      <button type="button" class="">음악</button>
+      <button type="button" class="">팟캐스트</button>
+      <button type="button" class="">라이브</button>
+      <button type="button" class="">게임</button>
+      <button type="button" class="">믹스</button>
+      <button type="button" class="">시트콤</button>
+      <button type="button" class="">요리</button>
+      <button type="button" class="">피트니스</button>
+      <button type="button" class="">최근에 업로드된 동영상</button>
+      <button type="button" class="">감상한 동영상</button>
+      <button type="button" class="">새로운 맞춤 동영상</button>
+    </div>
+  </div>
 
 
   <div class="content01">
 
-
-    <!--content 상단 버튼 -->
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="contentButton01" role="group" aria-label="First group">
-        <button type="button" class="">전체</button>
-        <button type="button" class="">음악</button>
-        <button type="button" class="">팟캐스트</button>
-        <button type="button" class="">라이브</button>
-        <button type="button" class="">게임</button>
-        <button type="button" class="">믹스</button>
-        <button type="button" class="">분장</button>
-        <button type="button" class="">시트콤</button>
-        <button type="button" class="">요리</button>
-        <button type="button" class="">피트니스</button>
-        <button type="button" class="">관광</button>
-        <button type="button" class="">최근에 업로드된 동영상</button>
-        <button type="button" class="">감상한 동영상</button>
-        <button type="button" class="">새로운 맞춤 동영상</button>
-      </div>
-    </div>
 
 
 
@@ -162,10 +189,11 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 play_01">
       <div class="col">
         <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="content_01.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title"></h5>
+            <div class="content_icon"></div>
+            <p class="card-text">리아스낵타임, 롯데리아에서 떨어지는 건 눈물이 아닌 가격이었다</p>
           </div>
           <div class="card-footer">
             <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -179,6 +207,9 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a short card.</p>
           </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
         </div>
       </div>
       <div class="col">
@@ -187,6 +218,9 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
@@ -215,6 +249,9 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a short card.</p>
           </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
         </div>
       </div>
       <div class="col">
@@ -224,14 +261,8 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
@@ -241,6 +272,21 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a short card.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
@@ -254,15 +300,6 @@
 
 
 
-
-
-      </div>
-    </div>
-
-  </div>
-
-
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="project_01.js"></script>

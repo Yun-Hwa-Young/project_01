@@ -1,77 +1,87 @@
 
-body {
+html body {
+
+wight : 100vh;
 
 }
 
-.backGround01   /* 화면 배경 둥근 모서리*/
-{
-
- border-radius: 10px;
- background-color: black;
- width: 99.5%;
- height:99%;
- position: fixed;
- margin: 5px 0px 5px 5px;
- box-sizing: border-box;
- width : 100% - 80px;
- height : 100% -80px;
- overflow-y: scroll;
+hr {
+    background:#949494;
+    height:1px;
+    border:0;
 }
 
 
-.backGround01Fixed   /* 화면 배경 둥근 모서리*/
+.backGround01   /* 배경 둥근 모서리*/
 {
 
  border-radius: 10px;
- background-color: black;
- width: 99.5%;
- height:99%;
+ background-color: #0F0F0F;
  position: fixed;
- top: 0px;
- margin: 5px 0px 5px 5px;
  box-sizing: border-box;
- width : 100% - 500px;
- height : 100% -500px;
- overflow-y: scroll;
+ width: 100%;
+ height:100%;
+
 }
 
 .topMenu{    /* 상단바*/
 
-background-color : dark;
+background-color : #0F0F0F;
 border-radius: 10px;
 box-sizing: border-box;
-height : 78px;
-position :  relative;
-left: 103px;
-width :calc(100% - 103px);
-padding-left: 0px;
+height : 48px;
+width : calc( 100% - 25px);
+padding-left: ;
 display: flex;
-
+margin: 5px 5px 5px 5px;
 }
 
 .side-bar {
   border-radius: 10px;
   position: fixed;
-  background-color:black;
+  background-color:#0F0F0F;
   box-sizing: border-box;
-  width: 93px;
-  height :96%;
-  text-align: center;
-  padding : 0px;
+  width: 240px;
+  height :calc(100% - 55px);
+  text-align: left;
+  padding : 13px 10px 0px 10px;
+  overflow-y: auto;
+
+  top : 55px;
 }
 
+.mini-side-bar{
+
+width: 100px;
+    background-color: #212121;
+    color: #fff;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
 .content01{
-  border-radius: 10px;
-  position: fixed;
-  background-color: yellow;
+border-radius: 10px;
+position : fixed;
+top: 0px;
+left: 250px;
+background-color: #0F0F0F;
+z-index : -1;
+height : auto;
+
   box-sizing: border-box;
-  position :relative;
-  left: 93px;
-  top: 1px;
-  width :calc(100% - 103px);
-  height :calc(100% - 89px);
-  margin : 10px 10px 10px 10px;
+  width :calc(100% - 260px);
+  height :100%;
+  margin : 0px 0px 10px 10px;
   padding-left: 10px;
+  padding-top: 100px;
+
+  display : block;
+
+  overflow-y: auto;
+  scrollbar-color: #ABABAB #0F0F0F;
+
 }
 
 .container-fluid{
@@ -82,12 +92,14 @@ padding: 10px 20px 10px 0px;
 #top01{   /*세줄 버튼*/
 border: 0;
 outline: 0;
-width: 55px;
-height: 55px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
 background-color : #0F0F0F;
 position : relative;
-top : 12px;
+margin-left: 10px;
+margin-right: 10px;
+
 }
 
 #top01:hover{
@@ -96,9 +108,10 @@ background-color: #333333;
 }
 
 
-#top02{
+
+#top02{   /* 검색바 */
 box-sizing: border-box;
-height: 53px;
+height: 40px;
 width: 700px;
 border-radius: 50px 0px 0px 50px;
 font-size: 20px;
@@ -109,7 +122,7 @@ border: 2px solid #333333;
 #top02:focus{
 width: 800px;
 box-sizing: border-box;
-height: 53px;
+height: 40px;
 outline: none;
 border: 1px solid #0A6EFF;
 
@@ -117,9 +130,15 @@ border: 1px solid #0A6EFF;
 }
 
 
-#top03{
+.searchText{
+
+
+
+}
+
+#top03{ /*검색 버튼 */
 box-sizing: border-box;
-height: 53px;
+height: 40px;
 width : 75px;
 border-radius: 0px 50px 50px 0px;
 border: 0;
@@ -140,10 +159,10 @@ text-align : center;
 #top04{
 border: 0;
 outline: 0;
-width: 55px;
-height: 55px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
-background-color : #222222;
+background-color : #272727;
 margin: 0px 20px;
 }
 
@@ -185,45 +204,56 @@ left: -350px; /* y좌표 이동 */
 #setting02{   /*top 설정 버튼 */
 border: 0;
 outline: 0;
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
 background-color : #0F0F0F;
 }
 
 
+.topButton01{
+margin-right : 3px;
+margin-left : 3px;
+}
 .dropdown-menu a i {
 margin:5px 20px 5px 10px;
 }
 
 
   .side-bar ul li{
-    background-color : black;
+    background-color : #0F0F0F;
     padding: 0px;
     list-style: none;
-    text-align : center;
     margin : 0px;
-    width : 93px;
-    height: 100px;
+    width : 220px;
+     height: 43px;
     border-radius : 10px;
+
     }
 
 .side-bar ul > li > a {
 
   display: block;
   font-size:15px;
-  padding-top: 20px;
+  padding-top: 7px;
   padding-bottom: 10px;
   text-decoration: none;
   color: #ffffff;
-  width : 93px;
-  height: 100px;
+  width : 220px;
+  height: 43px;
   border-radius : 10px;
-  margin:0px;
-  background-color : black;
+  margin:0px 20px 0px 0px;
+  background-color : #0F0F0F;
+   text-align: left;
+}
+
+.side-bar ul > li > a > i {
+margin-right :20px;
 }
 
 /* 사이드 메뉴 버튼 */
+
+
 
 #setting03_1:hover{
 background-color: #333333;
@@ -241,22 +271,67 @@ background-color: #333333;
 background-color: #333333;
 }
 
+
+#setting04{
+
+border: 0;
+outline: 0;
+width: 100px;
+height: 36px;
+border-radius: 50px;
+background-color :  #272727;
+font-size:15px;
+
+}
+
+#setting04:hover{
+
+border: 0;
+outline: 0;
+width: 100px;
+height: 36px;
+border-radius: 50px;
+background-color :  #222222;
+font-size:15px;
+
+}
+
+
 .side-bar ul {
 
   padding :0px;
   margin: 0px;
   font-color: #fafafa;
   border-radius : 10px;
-  width : 93px;
-  height: 100px;
+  width : 220px;
+  height: 43px;
+
 
   }
 
 
 .contentButton01{
-
+position : fixed;
+background-color: #0F0F0F;
 margin : 3px 5px 20px 3px;
-background-color: black;
+border-radius: 10px;
+position :relative;
+top: 60px;
+left: 260px;
+
+box-sizing: border-box;
+  width : calc(100% - 285px);
+  height: 35px;
+
+/*
+  box-sizing: border-box;
+  width :100%;
+  height :calc(100% - 60px);
+  margin : 10px 10px 10px 10px;
+  padding-left: 10px;
+  overflow-y: auto;
+
+  */
 }
 
 .contentButton01 button{
@@ -264,14 +339,13 @@ background-color: black;
 border: 0;
 outline: 0;
 width: auto;
-min-width : 70px;
-height: 45px;
+min-width : 55px;
+height: 35px;
 border-radius: 10px;
-font-size:19px;
+font-size:15px;
 color: white;
 background-color: #222222;
-padding: 5px 15px 5px 15px;
-margin: 0px 5px 0px 5px;
+margin-left : 3px;
 
 
 }
@@ -291,11 +365,31 @@ font-weight:Semi Bold;
 .play_01{
 
 width : 100%;
-height : 500px;
+height : 330px;
+padding: 30px 0px 10px 0px;
+
+
 }
 
+.content_icon{
+background-color : yellow;}
 
-.play_02{}
 
 
+.play_02{
+
+width : 100%;
+height : 500px;
+padding: 48px 5px 10px 10px;
+margin -left: 10px;
+
+
+
+}
+
+.play_02 .col{
+width: 20%;
+height: 300px;
+padding: 0px 10px 0px 10px;
+}
 
