@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/203ddf6e87.js" crossorigin="anonymous"></script>
+  <link href="project_01.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<div class="backGround01">
+
+
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar bg-#0F0F0F fixed-top topMenu" data-bs-theme="dark">
+
+
+      <!-- 세줄버튼 -->
+      <div class="justify-content-start">
+        <button type="button" id="top01" >
+          <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
+        </button>
+      </div>
+
+      <!-- Logo-->
+      <a class="navbar-brand" href="#" onclick="http://localhost:63342/project_01/project_01.html?#" >
+        <img
+                src="Logo.png"
+                height="35px;"
+                width="110px;"
+                alt="Logo"
+                loading="lazy"
+        />
+      </a>
+
+      <!-- Search form -->
+      <div class="collapse navbar-collapse">
+        <div class="navbar-collapse searchText justify-content-center">
+          <form class=" d-md-flex input-group w-auto" >
+            <input
+                    autocomplete="off"
+                    type="search"
+                    class="topSearch"
+                    placeholder=" 검색"
+                    id="top02"
+            />
+            <button class="form-control" id="top03"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #fafafa;"></i></button>
+            <button class="form-control" id="top04"><i class="fa-solid fa-microphone fa-xl" style="color: #fafafa;"></i></button>
+
+          </form>
+        </div>
+
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+
+          <!-- 만들기 -->
+          <div class="dropdown topButton01">
+            <button class="form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="setting04">
+              <a><i class="fa-solid fa-plus fa-xl" style="color: #fcfcfc;"></i>만들기</a>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
+            </ul>
+          </div>
+
+          <!-- 알림 종모양 -->
+          <div class="dropdown topButton01">
+            <button class="form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="top01">
+              <i class="fa-regular fa-bell fa-lg" style="color: #fcfcfc;"></i>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
+            </ul>
+          </div>
+
+
+
+          <!--계정 정보 -->
+
+          <div class="dropdown topButton01">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="setting02">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #fcfcfc;"></i>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>YouTube의 내 데이터</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>디자인: 어두운 테마</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>언어:한국어</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-shield" style="color: #fcfcfc;"></i>제한 모드: 사용 안함</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe" style="color: #fafafa;"></i>위치: 한국</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-keyboard" style="color: #ffffff;"  ></i>단축키</a></li>
+              <hr> <!-- 수평가로선 끝맺음 없음 -->
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #f7f9fc;" ></i>설정</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>고객센터</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-circle-exclamation" style="color: #ffffff;" ></i>의견 보내기</a></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+
+      </div>
+  </nav>
+
+  <div class="playContent">
+    <iframe id="previewFrame" width="100%" height="85%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="playComment01"><a id="playTitle">[전참시] 우쪽이X타쪽이 때문에 기 빨리는 애니 누나 내향형은 못 견디는 올데이 프로젝트 음중 출근길 | #올데이프로젝트#애니 MBC250726방송</a></div>
+  </div>
+
+
+
+
+
+    <div class="playComment">
+
+    <div class="playButton" >
+
+    <button class="contentButton">M</button>
+    <p>엠뚜루마뚜루:MBC 공식 종합 채널<br><small>구독자 284만명</small></p>
+
+      <div class="dropdown subButton">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-regular fa-bell fa-lg" style="color: #ffffff;"></i>구독중
+        </button>
+        <ul class="dropdown-menu" id="setting05">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+
+ <div class="playButton01">
+
+   <div class="btn-group" role="group" aria-label="Basic example">
+     <button type="button" class="btn" id="top03_01" style="background-color: red; "><i class="fa-regular fa-thumbs-up fa-lg" style="color: #ffffff;"></i>2.4만</button>
+     <button type="button" class="btn" id="top03" style="background-color: red;"><i class="fa-regular fa-thumbs-up fa-flip-vertical fa-lg" style="color: #fafafa;"></i></button>
+   </div>
+    <button class="btn"><i class="fa-solid fa-share" style="color: #fcfcfc;"></i>공유</button>
+    <button class="btn"><i class="fa-solid fa-download" style="color: #ffffff;"></i>오프라인 저장</button>
+    <button class="btn" id="btnSetting"><i class="fa-solid fa-ellipsis fa-lg" style="color: #fcfcfc;"></i></button>
+ </div>
+</div>
+
+      <div class="contentComment">
+
+        <div data-ke-type="moreLess" data-text-more="더보기" data-text-less="간략히" class="collapsed">
+          조회수
+
+          2025. 7. 27.
+          [전지적 참견 시점] 토요일 밤 11시 10분 방송!
+          MBC의 따끈따끈한 영상을 내 맘대로 편하게 즐기는 채널🌀
+          엠뚜루마뚜루 보러가기👉   / 엠뚜루마뚜루
+          -
+          #전지적참견시점
+          #엠뚜루마뚜루
+          전지적 참견 시점 풀영상 보러가기
+          ✔ WAVVE : https://deep.wavve.com/content/M_1003...
+
+          ✔ iMBC : https://program.imbc.com/omniscient
+
+          ⓒ MBC&iMBC 무단 전재, 재배포 및 이용(AI학습 포함)금지
+          스크립트
+          스크립트를 보면서 시청하세요.ㄷㄷ곧ㄱ소곧ㄱ솓ㄱ솓ㄱ솓곳ㄷㄱ솓ㄳ
+          ㄱ솓굳구ㅛㄷ교ㅜㄱ됴ㅜㄱ숟구
+          굳굳굳ㄱ숟ㄱ수구
+        </div>
+        <button id="toggle">더보기</button>
+
+      </div>
+
+
+
+  </div>
+
+  <div class="userComment">여기는 댓글 부분입니다</div>
+  <div class="sidebarRightButton">
+
+    <div class="btn-toolbar wrapper" role="toolbar" aria-label="Toolbar with button groups">
+      <button class="scroll-button" id="leftBtn">◀</button>
+      <div class="contentButton02" id="scrollBox" role="group" aria-label="First group">
+        <button type="button" class="">전체</button>
+        <button type="button" class="">음악</button>
+        <button type="button" class="">팟캐스트</button>
+        <button type="button" class="">라이브</button>
+        <button type="button" class="">게임</button>
+        <button type="button" class="">믹스</button>
+        <button type="button" class="">시트콤</button>
+        <button type="button" class="">요리</button>
+        <button type="button" class="">피트니스</button>
+        <button type="button" class="">최근에 업로드된 동영상</button>
+        <button type="button" class="">감상한 동영상</button>
+        <button type="button" class="">새로운 맞춤 동영상</button>
+      </div>
+      <button class="scroll-button" id="rightBtn">▶</button>
+    </div>
+
+
+  </div>
+  <div class="sidebarRight">여기는 오른쪽 사이드바 부분입니다</div>
+
+
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="project_01.js"></script>
+<script src="video.js"></script>
+</body>
+</html>

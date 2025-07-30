@@ -1,0 +1,261 @@
+
+html body {
+
+wight : 100vh;
+
+}
+
+.backGround01   /* 배경 둥근 모서리*/
+{
+
+ border-radius: 10px;
+ background-color: #0F0F0F;
+ position: fixed;
+ box-sizing: border-box;
+ width: 100%;
+ height:100%;
+ overflow-y: auto;
+   scrollbar-color: #ABABAB #0F0F0F;
+
+}
+
+
+
+
+
+.playContent{
+background-color :#0F0F0F;
+position : relative;
+top : 70px;
+left:5px;
+width: 65%;
+height: 75%;
+border-radius : 20px;
+}
+
+.playComment01{
+
+background-color : #0F0F0F;
+height: 13%;
+border-radius : 20px;
+
+
+
+}
+.playComment{
+background-color : #272727;
+position : relative;
+left: 5px;
+top: 80px;
+width: 65%;
+height: 200px;
+border-radius : 20px;
+color : white;
+}
+
+.playComment p{
+background-color:red;
+border: 3px solid yellow;
+position : absolute;
+left:50px;
+top: 3px;
+width : 250px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+.userComment{
+background-color : #272727;
+position : relative;
+left: 5px;
+top: 90px;
+width: 65%;
+height: 500px;
+border-radius : 20px;
+}
+
+
+.sidebarRight{
+background-color : blue;
+position: absolute;
+left: 66%;
+top : 16%;
+border-radius : 20px;
+box-sizing: border-box;
+ width: 34%;
+ height :100%;
+ overflow-y: auto;
+}
+
+
+#playTitle{
+font-size :  20px;
+font-weight: bold;
+color: white;
+}
+
+
+.subButton{
+border: 0;
+outline: 0;
+width: 120px;
+height: 36px;
+border-radius: 50px;
+background-color :  red;
+font-size:15px;
+position : relative;
+top: -30px;
+left: 320px;
+}
+
+
+.btn{
+background-color: #282827;
+color: #EDEDED;
+width : auto;
+border-radius: 50px;
+}
+
+
+
+#setting05{
+width: 100px;
+border: 0;
+outline: 0;
+border-radius:20px;
+background-color : #282828;
+font-size: 15px;
+font-family: 맑은고딕;
+color: #EDEDED;
+font-wight: bold;
+line-height: 30px; /* 줄높이 */
+}
+
+.dropdown-item{
+color: #EDEDED;
+}
+
+
+.playButton01{
+
+width :500px;
+position : relative;
+top: -60px;
+left :50%;
+}
+
+
+#top03_01{
+box-sizing: border-box;
+height: 40px;
+width : 100px;
+border-radius: 50px 0px 0px 50px;
+border: 0;
+outline: 0;
+padding: 0px;
+}
+
+#btnSetting{
+border-radius: 50%;
+}
+
+.contentComment{
+border-radius: 20px;
+background-color : pink;
+width : 98%;
+height: 100px;
+position : relative;
+top:-50px;
+left :5px;
+z-index:5;
+}
+
+
+
+.collapsed {
+  max-height: 50px;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+.expanded {
+  max-height: 1000px;
+}
+
+
+.playComment_01{
+background-color : #272727;
+position : relative;
+left: 5px;
+top: 3px;
+width: 100%;
+height: 200px;
+border-radius : 20px;
+color : white;
+}
+
+.sidebarRightButton{
+
+background-color : yellow;
+position: absolute;
+left: 66%;
+top : 10%;
+border-radius : 20px;
+box-sizing: border-box;
+ width: auto;
+ height :5%;
+
+ display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: gray;
+
+}
+
+
+.contentButton02{
+width: 500px;
+overflow-x:auto;
+white-space: nowrap;
+scroll-behavior: smooth;
+
+}
+
+.contentButton02 button{
+display:inline-block;
+border: 0;
+outline: 0;
+width: auto;
+min-width : 55px;
+height: 30px;
+border-radius: 10px;
+font-size:15px;
+color: white;
+background-color: #222222;
+margin-left : 3px;
+white-space: normal;
+}
+
+
+.contentButton02 button:focus{
+
+
+background-color: #F9FFFF;
+color: black;
+font-weight:Semi Bold;
+
+}
+
+.wrapper{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 5px;
+}
+
+.scroll-button{
+width: 30px;
+height: 60px;
+cursor: pointer;
+}
