@@ -339,6 +339,16 @@ box-sizing: border-box;
   */
 }
 
+.logo{
+cursor: pointer;
+}
+
+#logoReturn{
+position: absolute;
+top:0px;
+left:0px;
+}
+
 .contentButton01 button{
 
 border: 0;

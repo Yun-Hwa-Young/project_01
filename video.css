@@ -1,4 +1,13 @@
 
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
 html body {
 
 wight : 100vh;
@@ -38,12 +47,14 @@ border-radius : 20px;
 background-color : #0F0F0F;
 height: 13%;
 border-radius : 20px;
-
-
+color : white;
+font-size:20px;
+font-weight :bold;
+padding: 5px;
 
 }
 .playComment{
-background-color : #272727;
+background-color : #0F0F0F;
 position : relative;
 left: 5px;
 top: 80px;
@@ -53,9 +64,8 @@ border-radius : 20px;
 color : white;
 }
 
-.playComment p{
-background-color:red;
-border: 3px solid yellow;
+#channelName {
+background-color:#0F0F0F;
 position : absolute;
 left:50px;
 top: 3px;
@@ -63,18 +73,67 @@ width : 250px;
 white-space:nowrap;
 overflow:hidden;
 text-overflow:ellipsis;
+margin-left : 5px;
+font-weight : bold;
 }
+
+
+#subscriber{
+background-color:#0F0F0F;
+position : absolute;
+left:50px;
+top: 30px;
+width : 250px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size: 13px;
+color: lightgray;
+margin-left : 5px;
+}
+
+
+/*댓글창*/
 
 .userComment{
 background-color : #272727;
 position : relative;
 left: 5px;
 top: 90px;
-width: 65%;
+max-width: 65%;
 height: 500px;
 border-radius : 20px;
+font-family: sans-serif;
 }
 
+.commentForm{
+display: flex;
+flex-direction: column;
+gap:10px;
+}
+
+#commentInput{
+width : 100%;
+height: 80px;
+padding: 10px;
+resize: none;
+font-size: 14px;
+}
+
+#submitComment{
+align-self: flex-end;
+padding: 8px 16px;
+font-size: 14px;
+cursor: pointer;
+
+}
+
+.commentList{
+margin-top: 10px;
+margin-botto,: 10px;
+background-color: yellow;
+border-radius: 50px;
+}
 
 .sidebarRight{
 background-color : blue;
@@ -102,16 +161,23 @@ outline: 0;
 width: 120px;
 height: 36px;
 border-radius: 50px;
-background-color :  red;
-font-size:15px;
 position : relative;
-top: -30px;
-left: 320px;
+top: -27px;
+left: 200px;
 }
 
 
 .btn{
 background-color: #282827;
+color: #EDEDED;
+width : auto;
+border-radius: 50px;
+font-size:14px;
+font-weight: bold;
+}
+
+.btn:hover{
+background-color: #3F3F3F;
 color: #EDEDED;
 width : auto;
 border-radius: 50px;
@@ -141,19 +207,65 @@ color: #EDEDED;
 
 width :500px;
 position : relative;
-top: -60px;
+top: -63px;
 left :50%;
+background-color: #0F0F0F;
+}
+
+#videoDescriptionContainer {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 3줄 제한 */
+  line-height: 1.5em;
+  max-height: 100px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  transition: max-height 0.3s ease;
+  padding : 8px;
+}
+
+#videoDescriptionContainer.expanded {
+  -webkit-line-clamp: unset;
+  display: block;
+  max-height: 1000px; /* 충분히 크게 */
+  overflow: visible;
+}
+
+#toggle{
+ margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size:14px;
+  font-weight:bold;
+  border: 0;
+  outline: 0;
+  background-color: #282827;
+  color: #EDEDED;
+  width : auto;
+
 }
 
 
 #top03_01{
 box-sizing: border-box;
 height: 40px;
-width : 100px;
+width : auto;
 border-radius: 50px 0px 0px 50px;
 border: 0;
 outline: 0;
-padding: 0px;
+padding-top: 8px;
+}
+
+
+#top03_02{
+box-sizing: border-box;
+height: 40px;
+width : 50px;
+border-radius: 0px 50px 50px 0px;
+border: 0;
+outline: 0;
+padding-top: 8px;
 }
 
 #btnSetting{
@@ -162,13 +274,18 @@ border-radius: 50%;
 
 .contentComment{
 border-radius: 20px;
-background-color : pink;
 width : 98%;
-height: 100px;
 position : relative;
 top:-50px;
 left :5px;
 z-index:5;
+padding: 5px;
+
+  border: 0;
+  outline: 0;
+  background-color: #282827;
+  color: #EDEDED;
+  width : auto;
 }
 
 
@@ -196,13 +313,13 @@ color : white;
 
 .sidebarRightButton{
 
-background-color : yellow;
+background-color : black;
 position: absolute;
 left: 66%;
 top : 10%;
 border-radius : 20px;
 box-sizing: border-box;
- width: auto;
+ width: 34%;
  height :5%;
 
  display: flex;
@@ -215,12 +332,21 @@ box-sizing: border-box;
 
 
 .contentButton02{
-width: 500px;
+width: 85%;
 overflow-x:auto;
 white-space: nowrap;
 scroll-behavior: smooth;
+flex-shrink: 0;
+
+scrollbar-width: none;
+-ms-overflow-style: none;
 
 }
+
+.contentButton02::-webkit-scrollbar{
+display :none;
+}
+
 
 .contentButton02 button{
 display:inline-block;
@@ -232,7 +358,7 @@ height: 30px;
 border-radius: 10px;
 font-size:15px;
 color: white;
-background-color: #222222;
+background-color: #272727;
 margin-left : 3px;
 white-space: normal;
 }
@@ -252,10 +378,38 @@ display: flex;
 flex-direction: row;
 align-items: center;
 gap: 5px;
+
+flex-wrap: nowrap;
+width: fit-content;
+max-width: 100%;
 }
 
 .scroll-button{
+border-radius: 50%
+background-color: #F9FFFF;
 width: 30px;
-height: 60px;
+height: 30px;
 cursor: pointer;
+flex-shrink:0;
+}
+
+
+#thumbsUpCount{
+display: inline-block;
+}
+
+
+
+.shake-animation {
+  animation: shake 0.4s ease;
+}
+
+
+#videoDescription{
+ white-space: pre-line;
+ font-size:14px;
+ font-weight : bold;
+ line-height: 10px;
+
+
 }
