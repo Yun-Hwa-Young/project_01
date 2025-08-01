@@ -66,7 +66,7 @@ p3.textContent = "조회수: " + video.views +"회";
 div2.style.display ='inline-block';
 
 
-;
+
 div.appendChild(img);
 div.appendChild(div2);
 div2.appendChild(p1);
