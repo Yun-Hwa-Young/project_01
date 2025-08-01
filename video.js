@@ -18,6 +18,7 @@ const submitComment = document.getElementById('submitComment');
 const submitCommentCl = document.getElementById('submitCommentCl');
 const commentList = document.getElementById('commentList');
 const commentCount = document.getElementById('commentCount');
+const container = document.querySelector('.sidebarList');
 
 
 if (!iframe) {
@@ -31,6 +32,50 @@ if(toggle){
     toggle.textContent = isExpanded ? toggle.getAttribute('data-text-less') : toggle.getAttribute('data-text-more');
   });
 }
+
+
+videoData.forEach(video => {
+
+const div = document.createElement('div');
+div.className = 'sidebarList';
+
+const img = document.createElement('img');
+img.src= video.thumbnail;
+img.style.width = '180px';
+img.style.height='90px';
+img.style.borderRadius='8px';
+div.style.padding ='3px';
+div.style.display = 'flex';
+
+
+const div2 = document.createElement('div');
+div2.className = 'sidebarList2';
+
+const p1 = document.createElement('p');
+p1.className='sidebarListP1';
+const p2 = document.createElement('p');
+p2.className='sidebarListP2';
+const p3 = document.createElement('p');
+p3.className='sidebarListP3';
+
+
+p1.textContent = video.title;
+p2.textContent = video.channel;
+p3.textContent = "조회수: " + video.views +"회";
+
+div2.style.display ='inline-block';
+
+
+;
+div.appendChild(img);
+div.appendChild(div2);
+div2.appendChild(p1);
+div2.appendChild(p2);
+div2.appendChild(p3);
+container.appendChild(div);
+});
+
+
 
 if(imageKey){
 
@@ -193,7 +238,7 @@ if (icon.classList.contains("fa-regular")) {
 });
 
 
-
+//댓글 전송 누를 때
 submitComment.addEventListener('click', () =>{
 
 const videoInfo = videoData.find(video => video.videoId === currentVideoId);
