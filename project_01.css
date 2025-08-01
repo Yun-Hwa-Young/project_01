@@ -41,23 +41,13 @@ margin: 5px 5px 5px 5px;
   position: fixed;
   background-color:#0F0F0F;
   box-sizing: border-box;
-  width: 240px;
+  width: 250px;
   height :calc(100% - 55px);
   text-align: left;
   padding : 13px 10px 0px 10px;
   overflow-y: auto;
-
   top : 55px;
-}
-
-.mini-side-bar{
-
-width: 100px;
-    background-color: #212121;
-    color: #fff;
-    position: fixed;
-    height: 100vh;
-    overflow-y: auto;
+  padding-left:20px;
 }
 
 
@@ -228,7 +218,13 @@ margin-left : 3px;
 margin:5px 20px 5px 10px;
 }
 
+.video-item{
+}
 
+
+.col{
+margin-bottom: 20px;
+}
   .side-bar ul li{
     background-color : #0F0F0F;
     padding: 0px;
@@ -243,7 +239,7 @@ margin:5px 20px 5px 10px;
 .side-bar ul > li > a {
 
   display: block;
-  font-size:15px;
+  font-size:14px;
   padding-top: 7px;
   padding-bottom: 10px;
   text-decoration: none;
@@ -254,6 +250,7 @@ margin:5px 20px 5px 10px;
   margin:0px 20px 0px 0px;
   background-color : #0F0F0F;
    text-align: left;
+   font-family: "맑은 고딕";
 }
 
 .side-bar ul > li > a > i {
@@ -486,7 +483,7 @@ position : relative;
 top : -45px;
 left: 50px;
 width : calc(100% - 50px);
-padding: 5px 3px 0px 5px;
+padding: 10px 3px 0px 5px;
 margin-bottom: 0px;
 
 }
@@ -504,10 +501,36 @@ width : calc(100% - 50px);
 
 .card-text01{
 
-width : width : calc(100% - 50px);
-color : white;
+width : calc(100% - 50px);
+color : #AAAAA0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+font-size:14px;
 
 }
+
+.card-text02{
+
+width : calc(100% - 50px);
+color : white;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+font-size:15px;
+font-weight:bold;
+height:40px;
+
+}
+
 
 
 .contentButton{ /*동영상 동그란 버튼 */
@@ -532,6 +555,6 @@ z-index:2;
 
 .cardAni01:hover{
 
-transform: scale(1.2);
+transform: scale(1.1);
 z-index:2;
 }

@@ -34,13 +34,17 @@ div.innerHTML = `
           <div class="cardAni01">
             <a href="#" class="videoLink" data-video-id="${video.videoId}" data-image-src="${video.thumbnail}"><img src="${video.thumbnail}" class="card-img-top" alt="..."></a>
           </div>
-          <div class="contentHead"><button class="contentButton"> </button></div>
+          <div class="contentHead"><button class="contentButton"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </button></div>
           <div class="card-body01">
-            <p class="card-text01" >${video.title}</p>
+            <p class="card-text02" >${video.title}</p>
           </div>
           <div class="card-body02">
-            <small class="card-text01"><a style="font-weight: bold;">채널명 · </a>${video.channel}</small><br>
-            <small class="card-text01">조회수 ${video.views}회 · 12일 전</small>
+            <div class="card-text01">
+                <a style="font-weight: bold;">채널명 · </a>${video.channel}
+              </div>
+              <div class="card-text01">
+                조회수 ${video.views}회 · 12일 전
+              </div>
           </div>
         </div>
       </div>
@@ -155,17 +159,20 @@ div.innerHTML = `
           <div class="cardAni01">
             <a href="#" class="videoLink" data-video-id="${video.videoId}" data-image-src="${video.thumbnail}"><img src="${video.thumbnail}" class="card-img-top" alt="..."></a>
           </div>
-          <div class="contentHead"><button class="contentButton"> </button></div>
+          <div class="contentHead"><button class="contentButton"> <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></button></div>
           <div class="card-body01">
-            <p class="card-text01" >${video.title}</p>
+            <p class="card-text02" >${video.title}</p>
           </div>
           <div class="card-body02">
-            <small class="card-text01"><a style="font-weight: bold;">채널명 · </a>${video.channel}</small><br>
-            <small class="card-text01">조회수 ${video.views}회 · 12일 전</small>
+            <div class="card-text01">
+                <a style="font-weight: bold;">채널명 · </a>${video.channel}
+              </div>
+              <div class="card-text01">
+                조회수 ${video.views}회 · 12일 전
+              </div>
           </div>
         </div>
       </div>
-
 
 `;
 div1.appendChild(div);
