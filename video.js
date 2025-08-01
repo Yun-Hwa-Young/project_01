@@ -15,7 +15,9 @@ const videoDescriptionContainer = document.getElementById('videoDescriptionConta
 const toggle = document.getElementById('toggle');
 const commentInput = document.getElementById('commentInput');
 const submitComment = document.getElementById('submitComment');
+const submitCommentCl = document.getElementById('submitCommentCl');
 const commentList = document.getElementById('commentList');
+const commentCount = document.getElementById('commentCount');
 
 
 if (!iframe) {
@@ -55,6 +57,10 @@ iframe.src = iframeSrc;
       const thumbsUpCountEl = document.getElementById('thumbsUpCount');
       thumbsUpCountEl.textContent = videoInfo.thumbsUp;
 
+      const commentCountEl = document.getElementById('commentCount');
+      commentCount.textContent = videoInfo.commentCount;
+
+
 
 
     } else {
@@ -64,18 +70,87 @@ iframe.src = iframeSrc;
 }
 
 
+document.getElementById("commentButton").hidden = true;
+
+
+commentInput.addEventListener('click', () =>{
+
+
+
+document.getElementById("commentButton").hidden = false;
+submitComment.classList.add("active");
+}
+);
+
+
+
+
 submitComment.addEventListener('click', () =>{
 
-const text = commentInput.value.trim();
+const text = commentInput.value;
+
 if(text){
 const comment = document.createElement('div');
 comment.className = 'commentItem';
-comment.innerText = text;
+
+const button = document.createElement('button');
+button.className = "userIcon";
+
+const textNode = document.createElement('span');
+textNode.className = 'commentText';
+textNode.innerText = text;
+
+
+comment.appendChild(button);
+comment.appendChild(textNode);
+
 
 commentList.appendChild(comment);
 commentInput.value = '';
 }
 });
+
+
+
+
+submitCommentCl.addEventListener('click', () =>{
+
+
+document.getElementById("commentButton").hidden = true;
+});
+
+
+
+commentInput.addEventListener('keydown', (event) => {
+const text = commentInput.value;
+
+  if (event.key === 'Enter' && !event.shiftKey) {
+    event.preventDefault(); // 기본 줄바꿈 방지
+
+    const comment = document.createElement('div');
+    comment.className = 'commentItem';
+
+    const button = document.createElement('button');
+    button.className = "userIcon";
+
+    const textNode = document.createElement('span');
+    textNode.className = 'commentText';
+    textNode.innerText = text;
+
+
+    comment.appendChild(button);
+    comment.appendChild(textNode);
+
+
+    commentList.appendChild(comment);
+    commentInput.value = '';
+
+  }
+
+});
+
+
+
 
 
 //사이드바 옆에 스크롤 버튼

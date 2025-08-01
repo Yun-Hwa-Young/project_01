@@ -94,7 +94,7 @@ padding: 10px 20px 10px 0px;
 }
 
 
-#top01{   /*세줄 버튼*/
+.top01{   /*세줄 버튼*/
 border: 0;
 outline: 0;
 width: 40px;
@@ -107,7 +107,7 @@ margin-right: 10px;
 
 }
 
-#top01:hover{
+.top01:hover{
 
 background-color: #333333;
 }
@@ -191,7 +191,7 @@ background-color : #333333
 }
 
 /* top 설정키 드롭다운 메뉴들*/
-#setting01{
+.setting01{
 width: 400px;
 border: 0;
 outline: 0;

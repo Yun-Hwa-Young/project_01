@@ -45,14 +45,14 @@
 
   <!-- Sidebar -->
 
-  <nav id="main-navbar" class="navbar navbar-expand-lg navbar bg-#0F0F0F fixed-top topMenu" data-bs-theme="dark">
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar bg-dark fixed-top topMenu" data-bs-theme="dark">
 
     <!-- Container wrapper -->
     <div class="container-fluid">
 
       <!-- 세줄버튼 -->
       <div class="justify-content-start">
-      <button type="button" id="top01" >
+      <button class="top01" type="button" >
         <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
       </button>
         </div>
@@ -95,7 +95,7 @@
               <a><i class="fa-solid fa-plus fa-xl" style="color: #fcfcfc;"></i>만들기</a>
             </button>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+            <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
@@ -104,11 +104,11 @@
 
           <!-- 알림 종모양 -->
           <div class="dropdown topButton01">
-            <button class="form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="top01">
+            <button class="form-control top01" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-regular fa-bell fa-lg" style="color: #fcfcfc;"></i>
             </button>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+            <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
@@ -124,7 +124,7 @@
               <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #fcfcfc;"></i>
             </button>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="setting01">
+            <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>YouTube의 내 데이터</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>디자인: 어두운 테마</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>언어:한국어</a></li>
@@ -142,8 +142,11 @@
 
 
     </div>
-    <!--설정 드롭다운버튼  / 로그인 버튼-->
+
       </div>
+    </div>
+
+
   </nav>
 
 
@@ -172,9 +175,7 @@
 
   <div id="logoReturn"></div>
 
-    <!----동영상 첫줄 -->
     <div class="row row-cols-1 row-cols-md-3 play_01" id="play_01" >
-
 
     </div>
 
