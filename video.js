@@ -84,35 +84,6 @@ submitComment.classList.add("active");
 
 
 
-
-submitComment.addEventListener('click', () =>{
-
-const text = commentInput.value;
-
-if(text){
-const comment = document.createElement('div');
-comment.className = 'commentItem';
-
-const button = document.createElement('button');
-button.className = "userIcon";
-
-const textNode = document.createElement('span');
-textNode.className = 'commentText';
-textNode.innerText = text;
-
-
-comment.appendChild(button);
-comment.appendChild(textNode);
-
-
-commentList.appendChild(comment);
-commentInput.value = '';
-}
-});
-
-
-
-
 submitCommentCl.addEventListener('click', () =>{
 
 
@@ -123,8 +94,13 @@ document.getElementById("commentButton").hidden = true;
 
 commentInput.addEventListener('keydown', (event) => {
 const text = commentInput.value;
+const videoInfo = videoData.find(video => video.videoId === currentVideoId);
+
 
   if (event.key === 'Enter' && !event.shiftKey) {
+
+        videoInfo.commentCount += 1;
+         commentCount.textContent = videoInfo.commentCount;
     event.preventDefault(); // 기본 줄바꿈 방지
 
     const comment = document.createElement('div');
@@ -214,6 +190,46 @@ if (icon.classList.contains("fa-regular")) {
   }
 
 
+});
+
+
+
+submitComment.addEventListener('click', () =>{
+
+const videoInfo = videoData.find(video => video.videoId === currentVideoId);
+const text = commentInput.value;
+
+
+if(text){
+
+      videoInfo.commentCount += 1;
+       commentCount.textContent = videoInfo.commentCount;
+
+
+const comment = document.createElement('div');
+comment.className = 'commentItem';
+
+const button = document.createElement('button');
+button.className = "userIcon";
+
+const textNode = document.createElement('span');
+textNode.className = 'commentText';
+textNode.innerText = text;
+
+
+comment.appendChild(button);
+comment.appendChild(textNode);
+
+
+commentList.appendChild(comment);
+commentInput.value = '';
+
+
+
+
+
+
+}
 });
 
 
