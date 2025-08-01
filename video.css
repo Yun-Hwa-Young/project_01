@@ -10,7 +10,7 @@
 
 html body {
 
-wight : 100vh;
+width : 100vh;
 
 }
 
@@ -25,6 +25,7 @@ wight : 100vh;
  height:100%;
  overflow-y: auto;
    scrollbar-color: #ABABAB #0F0F0F;
+   padding-left:5px;
 
 }
 
@@ -34,12 +35,10 @@ wight : 100vh;
 
 .playContent{
 background-color :#0F0F0F;
-position : relative;
-top : 70px;
-left:5px;
 width: 65%;
 height: 75%;
 border-radius : 20px;
+padding-top:70px;
 }
 
 .playComment01{
@@ -54,42 +53,46 @@ padding: 5px;
 
 }
 .playComment{
-background-color : #0F0F0F;
-position : relative;
-left: 5px;
-top: 80px;
+background-color :#0F0F0F;
 width: 65%;
-height: 200px;
+height: auto;
 border-radius : 20px;
 color : white;
+min-width: 65%;
+}
+
+
+.playComment div{
+display: inline-block;
 }
 
 #channelName {
 background-color:#0F0F0F;
-position : absolute;
-left:50px;
-top: 3px;
-width : 250px;
+width : 100px;
 white-space:nowrap;
 overflow:hidden;
 text-overflow:ellipsis;
 margin-left : 5px;
 font-weight : bold;
+position:relative;
+top: 10px;
+left: 5px;
+display : inline-block;
 }
 
 
 #subscriber{
 background-color:#0F0F0F;
-position : absolute;
-left:50px;
-top: 30px;
-width : 250px;
+width : 120px;
 white-space:nowrap;
 overflow:hidden;
 text-overflow:ellipsis;
 font-size: 13px;
 color: lightgray;
 margin-left : 5px;
+position:relative;
+top: -20px;
+left: 50px;
 }
 
 
@@ -97,9 +100,6 @@ margin-left : 5px;
 
 .userComment{
 background-color : #272727;
-position : relative;
-left: 5px;
-top: 90px;
 max-width: 65%;
 height: 500px;
 border-radius : 20px;
@@ -156,14 +156,15 @@ color: white;
 
 
 .subButton{
+display:inline-block;
 border: 0;
 outline: 0;
 width: 120px;
 height: 36px;
 border-radius: 50px;
-position : relative;
-top: -27px;
-left: 200px;
+position: relative;
+top: -90%;
+left: 3%;
 }
 
 
@@ -204,12 +205,32 @@ color: #EDEDED;
 
 
 .playButton01{
-
-width :500px;
+width :auto;
 position : relative;
-top: -63px;
-left :50%;
+top: -90%;
+left: 25%;
 background-color: #0F0F0F;
+flex-wrap: nowrap;
+}
+
+@media (max-width: 1000px) {
+  #btnSetting {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #offSave {
+    display: none;
+  }
+}
+
+.playButton{
+
+width: 100%;
+height: 60px;
+border-radius : 20px;
+flex-wrap: nowrap;
 }
 
 #videoDescriptionContainer {
@@ -275,15 +296,12 @@ border-radius: 50%;
 .contentComment{
 border-radius: 20px;
 width : 98%;
-position : relative;
-top:-50px;
-left :5px;
 z-index:5;
 padding: 5px;
 
   border: 0;
   outline: 0;
-  background-color: #282827;
+  background-color: #2A2727;
   color: #EDEDED;
   width : auto;
 }
@@ -412,4 +430,11 @@ display: inline-block;
  line-height: 10px;
 
 
+}
+
+.playButton .contentButton{
+
+position:relative;
+top:0px;
+left: 10px;
 }

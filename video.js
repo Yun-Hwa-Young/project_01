@@ -78,21 +78,6 @@ commentInput.value = '';
 });
 
 
-/*댓글 더보기 */
-
-const toggleBtn = document.getElementById('toggle');
-const content = document.querySelector('[data-ke-type="moreLess"]');
-
-toggleBtn.addEventListener('click', () => {
-  content.classList.toggle('playComment_01');
-  content.classList.toggle('collapsed');
-  toggleBtn.textContent = content.classList.contains('expanded')
-    ? content.getAttribute('data-text-less')
-    : content.getAttribute('data-text-more');
-});
-
-
-
 //사이드바 옆에 스크롤 버튼
 const scrollBox = document.getElementById('scrollBox');
 const leftBtn = document.getElementById('leftBtn');
