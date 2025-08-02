@@ -53,12 +53,8 @@ div.innerHTML = `
 `;
 container.appendChild(div);
 
+
 });
-
-
-
-
-/* 파라미터 보내기 */
 
 const links= document.querySelectorAll(".videoLink");
 
@@ -71,6 +67,12 @@ const middleValue = parts[parts.length -2 ];
 link.href  = `video.html?videoId=${encodeURIComponent(videoId)}&imageKey=${encodeURIComponent(middleValue)}`;
 });
 });
+
+
+
+
+
+
 
 
 
@@ -179,6 +181,22 @@ div1.appendChild(div);
 });
 
 content01.appendChild(div1);
+
+
+/*파라미터 보내기*/
+const links= document.querySelectorAll(".videoLink");
+
+links.forEach(link => {
+const videoId = link.dataset.videoId;
+const imageSrc = link.dataset.imageSrc;
+const parts = imageSrc.split('/');
+const middleValue = parts[parts.length -2 ];
+
+link.href  = `video.html?videoId=${encodeURIComponent(videoId)}&imageKey=${encodeURIComponent(middleValue)}`;
+});
+
+
+
 });
 
 
@@ -223,6 +241,7 @@ const headerWrapper = document.querySelector(".headerWrapper");
  contentButton01.style.removeProperty('display');
 
 });
+
 
 
 
