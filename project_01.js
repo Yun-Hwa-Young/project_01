@@ -78,6 +78,9 @@ link.href  = `video.html?videoId=${encodeURIComponent(videoId)}&imageKey=${encod
 
 /*구독버튼 누를때*/
 
+const setting03_3 = document.getElementById("setting03_3");
+if(setting03_3){
+
 document.getElementById("setting03_3").addEventListener("click", () => {
 
 const oldHeaderWrapper = document.querySelector(".headerWrapper");
@@ -198,11 +201,16 @@ link.href  = `video.html?videoId=${encodeURIComponent(videoId)}&imageKey=${encod
 
 
 });
+}else{
+}
 
 
 
 
 /* 홈버튼 누를 때*/
+const setting03_1 = document.getElementById("setting03_1");
+
+if(setting03_1){
 document.getElementById("setting03_1").addEventListener("click", () => {
 const subContent = document.querySelector(".subContent");
 const headerWrapper = document.querySelector(".headerWrapper");
@@ -220,10 +228,16 @@ const headerWrapper = document.querySelector(".headerWrapper");
 
 
 });
+}else{}
 
 
 
-document.getElementById("logo").addEventListener("click", () => {
+const logo = document.getElementById("logo");
+
+if(setting03_1){
+
+
+logo.addEventListener("click", () => {
 
 const subContent = document.querySelector(".subContent");
 const headerWrapper = document.querySelector(".headerWrapper");
@@ -241,7 +255,7 @@ const headerWrapper = document.querySelector(".headerWrapper");
  contentButton01.style.removeProperty('display');
 
 });
-
+}else{}
 
 
 

@@ -203,14 +203,22 @@ function loadVideo(videoId) {
 
 loadVideo(videoId);
 
+
+
+
+
+
+
+
 //좋아요 누를때
 document.getElementById("top03_01").addEventListener("click", () => {
   const videoInfo = videoData.find(video => video.videoId === currentVideoId);
   const icon = document.getElementById("iconElement_01");
+  const icon2 = document.getElementById("iconElement_02");
 
 
 
-if (icon.classList.contains("fa-regular")) {
+if (icon.classList.contains("fa-regular")&&icon2.classList.contains("fa-regular")) {
     icon.classList.remove("fa-regular");
     icon.classList.add("fa-solid");
 
@@ -224,15 +232,37 @@ if (icon.classList.contains("fa-regular")) {
         document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
       }
 
-  } else {
-    icon.classList.remove("fa-solid");
-    icon.classList.add("fa-regular");
+  } else if(icon.classList.contains("fa-regular")&&icon2.classList.contains("fa-solid")){
+    icon.classList.remove("fa-regular");
+    icon.classList.add("fa-solid");
+    icon2.classList.remove("fa-solid");
+    icon2.classList.add("fa-regular");
 
     if (videoInfo) {
-        videoInfo.thumbsUp -= 1;
+        videoInfo.thumbsUp += 1;
+        videoInfo.thumbsDown -= 1;
         document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
       }
-  }
+  } else if(icon.classList.contains("fa-solid")&&icon2.classList.contains("fa-regular")){
+       icon.classList.remove("fa-solid");
+       icon.classList.add("fa-regular");
+
+
+       if (videoInfo) {
+           videoInfo.thumbsUp -= 1;
+           document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
+         }
+     }  else if(icon.classList.contains("fa-solid")&&icon2.classList.contains("fa-solid")){
+               icon.classList.remove("fa-solid");
+               icon.classList.add("fa-regular");
+
+               if (videoInfo) {
+                   videoInfo.thumbsUp -= 1;
+                   document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
+                 }
+             }else{}
+
+
 
 
 });
@@ -283,33 +313,53 @@ commentInput.value = '';
 document.getElementById("top03_02").addEventListener("click", () => {
   const videoInfo = videoData.find(video => video.videoId === currentVideoId);
   const icon = document.getElementById("iconElement_02");
+   const icon2 = document.getElementById("iconElement_01");
 
 
 
-if (icon.classList.contains("fa-regular")) {
+if (icon.classList.contains("fa-regular")&&icon2.classList.contains("fa-regular")) {
     icon.classList.remove("fa-regular");
     icon.classList.add("fa-solid");
-
     if (videoInfo) {
         videoInfo.thumbsDown += 1;
+        document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
       }
 
-  } else {
+
+
+  }else if(icon.classList.contains("fa-regular")&&icon2.classList.contains("fa-solid")){
+
+   icon.classList.remove("fa-regular");
+   icon.classList.add("fa-solid");
+   icon2.classList.remove("fa-solid");
+   icon2.classList.add("fa-regular");
+
+    if (videoInfo) {
+           videoInfo.thumbsDown += 1;
+          videoInfo.thumbsUp -= 1;
+           document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
+         }
+  }
+
+  else if(icon.classList.contains("fa-solid")&&icon2.classList.contains("fa-regular")){
     icon.classList.remove("fa-solid");
     icon.classList.add("fa-regular");
 
     if (videoInfo) {
         videoInfo.thumbsDown -= 1;
-
+         document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
       }
+
+      }else if(icon.classList.contains("fa-solid")&&icon2.classList.contains("fa-solid")){
+          icon.classList.remove("fa-solid");
+          icon.classList.add("fa-regular");
+
+
+          if (videoInfo) {
+              videoInfo.thumbsDown -= 1;
+               document.getElementById("thumbsUpCount").textContent = videoInfo.thumbsUp.toLocaleString();
+            }
   }
-
-
-
-
-
 });
 
 });
-
-
