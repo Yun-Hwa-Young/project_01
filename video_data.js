@@ -25,6 +25,7 @@ subscriber:"구독자 258만명",
 commentCount:0,
 thumbsUp: 45465,
 thumbsDown: 0,
+upDate: "2025-07-16T14:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/uDIEmiimbAU/mqdefault.jpg"
 },
 {
@@ -38,6 +39,7 @@ subscriber:"구독자 258만명",
 commentCount:0,
 thumbsUp: 3,
 thumbsDown: 0,
+upDate: "2025-07-19T07:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/jQVVGzVJywo/mqdefault.jpg"
 },
 {
@@ -51,6 +53,7 @@ subscriber:"구독자 45745만명",
 commentCount:0,
 thumbsUp: 9,
 thumbsDown: 0,
+upDate: "2024-01-16T09:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/yC9pY2MyzPg/mqdefault.jpg"
 },
 {
@@ -64,6 +67,7 @@ subscriber:"구독자 23만명",
 commentCount:0,
 thumbsUp: 7,
 thumbsDown: 0,
+upDate: "2025-08-02T00:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/zUKfd66HIkY/mqdefault.jpg"
 },
 {
@@ -77,6 +81,7 @@ subscriber:"구독자 796779만명",
 commentCount:0,
 thumbsUp: 45,
 thumbsDown: 0,
+upDate: "2025-07-17T14:00:00Z",
 thumbnail:"https://i1.ytimg.com/vi/bpM7ds1VnYo/mqdefault.jpg"
 },
 {
@@ -90,6 +95,7 @@ subscriber:"구독자 1만명",
 commentCount:0,
 thumbsUp: 696,
 thumbsDown: 0,
+upDate: "2025-08-02T14:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/LjZHg7DJle0/mqdefault.jpg"
 },
 {
@@ -103,6 +109,7 @@ subscriber:"구독자 768만명",
 commentCount:0,
 thumbsUp: 346,
 thumbsDown: 0,
+upDate: "2022-07-16T14:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/5s4Om7HzFMw/mqdefault.jpg"
 },
 {
@@ -116,6 +123,7 @@ subscriber:"구독자 12만명",
 commentCount:0,
 thumbsUp: 577,
 thumbsDown: 0,
+upDate: "2025-01-16T14:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/TNyBoHKBuNs/mqdefault.jpg"
 },
 {
@@ -129,6 +137,7 @@ subscriber:"구독자 89만명",
 commentCount:0,
 thumbsUp: 235,
 thumbsDown: 0,
+upDate: "2025-07-11T14:30:00Z",
 thumbnail:"https://i1.ytimg.com/vi/DI0Hd2R8LXA/mqdefault.jpg"
 }
 

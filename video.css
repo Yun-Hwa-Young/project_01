@@ -271,6 +271,26 @@ box-sizing: border-box;
  overflow-y: auto;
 }
 
+.descP{
+color:white;
+}
+.videoInfo{
+color:white;
+}
+
+.sidebarList img{
+transition: all 0.2s linear;
+z-index:2;
+
+}
+
+.sidebarList img:hover{
+
+transform: scale(1.2);
+z-index:2;
+}
+
+
 
 #playTitle{
 font-size :  20px;

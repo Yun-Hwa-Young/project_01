@@ -8,7 +8,36 @@ const content01 = document.querySelector(".content01");
 const contentButton01 = document.querySelector(".contentButton01");
 const container = document.getElementById('play_01');
 
+function timeAgo(dateString) {
+  const now = new Date();
+   const date = new Date(dateString);
 
+
+   const KST_OFFSET = 9 * 60 * 60 * 1000;
+   const nowKST = new Date(now.getTime() + KST_OFFSET);
+   const dateKST = new Date(date.getTime() + KST_OFFSET);
+
+   let diff = nowKST - dateKST;
+
+
+   if (diff < 0) return "방금 전";
+
+   const seconds = Math.floor(diff / 1000);
+   const minutes = Math.floor(diff / (1000 * 60));
+   const hours = Math.floor(diff / (1000 * 60 * 60));
+   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+   const weeks = Math.floor(days / 7);
+   const months = Math.floor(days / 30);
+   const years = Math.floor(days / 365);
+
+   if (seconds < 60) return `${seconds}초 전`;
+   if (minutes < 60) return `${minutes}분 전`;
+   if (hours < 24) return `${hours}시간 전`;
+   if (days < 7) return `${days}일 전`;
+   if (weeks < 5) return `${weeks}주 전`;
+   if (months < 12) return `${months}개월 전`;
+   return `${years}년 전`;
+}
 
 
 /*메인 화면의 동영상 리스트*/
@@ -26,6 +55,7 @@ if (!container) {
   }
 
 videoData.forEach(video => {
+const timeText = timeAgo(video.upDate);
 const div = document.createElement('div');
 div.className = 'video-item';
 div.innerHTML = `
@@ -43,7 +73,7 @@ div.innerHTML = `
                 <a style="font-weight: bold;">채널명 · </a>${video.channel}
               </div>
               <div class="card-text01">
-                조회수 ${video.views}회 · 12일 전
+                조회수 ${video.views}회 · ${new Date(video.upDate).toISOString().split("T")[0]}일 · ${timeText}
               </div>
           </div>
         </div>
@@ -173,7 +203,7 @@ div.innerHTML = `
                 <a style="font-weight: bold;">채널명 · </a>${video.channel}
               </div>
               <div class="card-text01">
-                조회수 ${video.views}회 · 12일 전
+                조회수 ${video.views}회 · ${new Date(video.upDate).toISOString().split("T")[0]}일
               </div>
           </div>
         </div>
