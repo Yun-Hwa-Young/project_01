@@ -279,9 +279,10 @@ color:white;
 }
 
 .sidebarList img{
+cursor: pointer;
 transition: all 0.2s linear;
 z-index:2;
-cursor: pointer;
+
 
 
 }
