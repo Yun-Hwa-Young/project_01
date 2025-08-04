@@ -548,10 +548,10 @@ max-width: 100%;
 }
 
 .scroll-button{
-border-radius: 50%
+border-radius: 50%;
 background-color: #F9FFFF;
-width: 30px;
-height: 30px;
+width: 33px;
+height: 33px;
 cursor: pointer;
 flex-shrink:0;
 }
