@@ -7,6 +7,7 @@ import {subVideoData} from './subVideo_data.js';
 const content01 = document.querySelector(".content01");
 const contentButton01 = document.querySelector(".contentButton01");
 const container = document.getElementById('play_01');
+const blurContent = document.getElementById('blurContent');
 
 function timeAgo(dateString) {
   const now = new Date();
@@ -122,6 +123,7 @@ if (oldSubContent) oldSubContent.remove();
 
 container.style.display ='none';
 contentButton01.style.display ='none';
+blurContent.style.display ='none';
 
 
 
@@ -185,6 +187,7 @@ const div1 = document.createElement('div');
 div1.classList.add('subContent', 'row', 'row-cols-1','row-cols-md-3');
 
 
+
 subVideoData.forEach(video => {
 const div = document.createElement('div');
 div.className = 'video-item';
@@ -211,6 +214,7 @@ div.innerHTML = `
 
 `;
 div1.appendChild(div);
+ window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 content01.appendChild(div1);
@@ -244,6 +248,7 @@ if(setting03_1){
 document.getElementById("setting03_1").addEventListener("click", () => {
 const subContent = document.querySelector(".subContent");
 const headerWrapper = document.querySelector(".headerWrapper");
+const blurContent = document.getElementById('blurContent');
 
   if (subContent) {
      subContent.remove();
@@ -255,6 +260,9 @@ const headerWrapper = document.querySelector(".headerWrapper");
 
    container.style.removeProperty('display');
    contentButton01.style.removeProperty('display');
+   blurContent.style.removeProperty('display');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
 
 });
@@ -283,6 +291,8 @@ const headerWrapper = document.querySelector(".headerWrapper");
 
  container.style.removeProperty('display');
  contentButton01.style.removeProperty('display');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 
 });
 }else{}

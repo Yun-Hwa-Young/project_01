@@ -393,6 +393,12 @@ cursor: pointer;
 }
 
 #logoReturn{
+ position: absolute;
+    top: 0;
+    left: 0;}
+
+
+#blurContent{
  position: fixed;
     top: 0;
     left: 0;
