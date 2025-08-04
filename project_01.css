@@ -179,6 +179,21 @@ border: 2px solid #333333;
 
 }
 
+.myIcon{
+width: 230px;
+white-space: normal;
+font-size: 17px;
+display: inline-block;
+line-height: 1.4;
+flex:1;
+color : white;
+}
+
+#userIcon_01{
+margin: 10px;
+width:70px;
+height:70px;
+}
 .topSearch01{
 text-align : center;
 }
