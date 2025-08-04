@@ -179,6 +179,12 @@ border: 2px solid #333333;
 
 }
 
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+  }
+
+
 .myIcon{
 width: 230px;
 white-space: normal;
@@ -387,9 +393,16 @@ cursor: pointer;
 }
 
 #logoReturn{
-position: absolute;
-top:0px;
-left:0px;
+ position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    pointer-events: none;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 999;
+
 }
 
 .contentButton01 button{
