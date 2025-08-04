@@ -73,12 +73,23 @@ const div = document.createElement('div');
 div.className = 'sidebarList';
 
 const img = document.createElement('img');
+img.classList.add('thumbnail-image');
 img.src= video.thumbnail;
 img.style.width = '180px';
 img.style.height='90px';
 img.style.borderRadius='8px';
 div.style.padding ='3px';
 div.style.display = 'flex';
+
+img.addEventListener('click', () => {
+    console.log(video.title + " 썸네일 클릭됨");
+
+    // imageKey를 thumbnail URL에서 추출하는 로직
+    const parts = video.thumbnail.split('/');
+    const imageKey = parts[parts.length - 2];
+
+    window.location.href = `video.html?videoId=${encodeURIComponent(video.videoId)}&imageKey=${encodeURIComponent(imageKey)}`;
+  });
 
 
 const div2 = document.createElement('div');
@@ -107,6 +118,9 @@ div2.appendChild(p2);
 div2.appendChild(p3);
 container.appendChild(div);
 });
+
+const imgs = document.querySelectorAll('.thumbnail-image');
+
 
 
 
@@ -405,5 +419,16 @@ if (icon.classList.contains("fa-regular")&&icon2.classList.contains("fa-regular"
             }
   }
 });
+
+});
+
+/* 검색마이크 버튼 눌러도 이벤트 방지/ URL 바뀜 방지 */
+document.getElementById('top03').addEventListener('click', function(event) {
+  event.preventDefault();
+
+});
+
+document.getElementById('top04').addEventListener('click', function(event) {
+  event.preventDefault();
 
 });

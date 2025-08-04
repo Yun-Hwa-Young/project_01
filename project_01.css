@@ -33,7 +33,8 @@ height : 48px;
 width : calc( 100% - 25px);
 padding-left: ;
 display: flex;
-margin: 5px 5px 5px 5px;
+  margin: 0;
+  padding: 5px;
 }
 
 .side-bar {
@@ -78,9 +79,18 @@ height : auto;
 .video_container {position:relative;padding-top:56.25%;height:0;width:100%;}
 .video_container iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
 
-
+/*
 .container-fluid{
 padding: 10px 20px 10px 0px;
+}
+*/
+#main-navbar .container-fluid {
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: space-between;
+  padding: 0 10px; /* padding 간소화 */
+  height: 48px; /* 상단바 높이와 맞추기 */
+  box-sizing: border-box;
 }
 
 
@@ -126,8 +136,12 @@ border: 1px solid #0A6EFF;
 
 
 .searchText{
-
-
+ display: flex;
+ align-items: center;
+ flex-wrap: nowrap;
+  max-width: 100%;
+  gap: 8px;
+  overflow: hidden;
 
 }
 
@@ -139,11 +153,30 @@ border-radius: 0px 50px 50px 0px;
 border: 0;
 outline: 0;
 padding: 0px;
+ flex-shrink: 0;
+  white-space: nowrap;
+
+ flex: 0 0 auto;
+
+}
+
+.input-group {
+  flex-wrap: nowrap !important;
+  align-items: center;
+  gap: 4px;
 }
 
 
 #topSearch{
 border: 2px solid #333333;
+  padding: 8px;
+  flex: 1 1 auto;
+  min-width: 60px;
+  box-sizing: border-box;
+   max-width: 700px;
+   transition: width 0.3s ease;
+
+
 }
 
 .topSearch01{
@@ -159,6 +192,8 @@ height: 40px;
 border-radius: 50%;
 background-color : #272727;
 margin: 0px 20px;
+ flex-shrink: 0;
+  white-space: nowrap;
 }
 
 #top04:hover{
@@ -315,7 +350,6 @@ font-size:15px;
 
   }
 
-
 .contentButton01{
 position : fixed;
 background-color: #0F0F0F;
@@ -325,19 +359,12 @@ position :relative;
 top: 60px;
 left: 260px;
 
-box-sizing: border-box;
+  box-sizing: border-box;
   width : calc(100% - 285px);
   height: 35px;
+  overflow-x: hidden;
+  white-space: nowrap;
 
-/*
-  box-sizing: border-box;
-  width :100%;
-  height :calc(100% - 60px);
-  margin : 10px 10px 10px 10px;
-  padding-left: 10px;
-  overflow-y: auto;
-
-  */
 }
 
 .logo{
@@ -362,6 +389,7 @@ font-size:15px;
 color: white;
 background-color: #222222;
 margin-left : 3px;
+flex-shrink: 0;
 
 
 }

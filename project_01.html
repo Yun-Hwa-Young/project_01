@@ -48,14 +48,13 @@
   <nav id="main-navbar" class="navbar navbar-expand-lg navbar bg-#0F0F0F fixed-top topMenu" data-bs-theme="dark">
 
     <!-- Container wrapper -->
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
 
       <!-- 세줄버튼 -->
-      <div class="justify-content-start">
+      <div class="d-flex align-items-center">
       <button class="top01" type="button" >
         <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
       </button>
-        </div>
 
       <!-- Logo-->
       <a class="navbar-brand logo" id="logo"  href="#logoReturn" >
@@ -67,11 +66,11 @@
                 loading="lazy"
         />
       </a>
+      </div>
 
       <!-- Search form -->
-      <div class="collapse navbar-collapse">
-        <div class="navbar-collapse searchText justify-content-center">
-        <form class=" d-md-flex input-group w-auto" >
+        <div class="navbar-collapse searchText d-none d-lg-flex">
+        <form class=" d-md-flex input-group w-auto"  style="flex-wrap: nowrap; min-width: 0;">
           <input
                   autocomplete="off"
                   type="search"
@@ -79,14 +78,14 @@
                   placeholder=" 검색"
                   id="top02"
           />
-          <button class="form-control" id="top03"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #fafafa;"></i></button>
-          <button class="form-control" id="top04"><i class="fa-solid fa-microphone fa-xl" style="color: #fafafa;"></i></button>
+          <button class="" id="top03"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #fafafa;"></i></button>
+          <button class="" id="top04"><i class="fa-solid fa-microphone fa-xl" style="color: #fafafa;"></i></button>
 
         </form>
         </div>
 
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="d-flex align-items-center gap-2" id="navbarNav">
 
 
         <!-- 만들기 -->
@@ -109,7 +108,11 @@
             </button>
 
             <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">알림</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#">중요</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>동영상 업로드</a></li>
+              <li><a class="dropdown-item" href="#">알림 더보기</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>게시물 작성</a></li>
             </ul>
@@ -143,7 +146,7 @@
 
     </div>
 
-      </div>
+
     </div>
 
 
