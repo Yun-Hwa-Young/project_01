@@ -281,7 +281,7 @@ color:white;
 .sidebarList img{
 transition: all 0.2s linear;
 z-index:2;
-  cursor: pointer;
+cursor: pointer;
 
 
 }
