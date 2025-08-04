@@ -2,11 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project_01</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="project_01.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+
 </head>
+
+
 <body>
 
-<h1>안녕하세요</h1>
+<div class="backGround01">
+  <!-- Sidebar -->
+  <div class="side-bar">
+    <ul>
+      <li>
+        <ul>
+          <li><a href="#logoReturn" id="setting03_1"><i class="fa-solid fa-house fa-xl" style="color: #fcfcfc;"></i>홈</a></li>
+          <li><a href="#" id="setting03_2"><i class="fa-regular fa-circle-play fa-xl" style="color: #f7f7f7;"></i>Shorts</a></li>
+          <li><a href="#" id="setting03_3"><i class="fa-brands fa-square-youtube fa-xl" style="color: #f5f5f5;"></i>구독</a></li>
+          <hr>
+          <li><a href="#" id="setting03_4">내 페이지 > </a></li>
+          <li><a href="#" id="setting03_5"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>시청기록</a></li>
+          <li><a href="#" id="setting03_6"><i class="fa-solid fa-list-ul" style="color: #fcfcfc;"></i>재생목록</a></li>
+          <li><a href="#" id="setting03_7"><i class="fa-solid fa-circle-play" style="color: #fcfcfc;"></i>내동영상</a></li>
+          <li><a href="#" id="setting03_8"><i class="fa-solid fa-film" style="color: #f8f9fc;"></i>내영화</a></li>
+          <li><a href="#" id="setting03_9"><i class="fa-regular fa-clock" style="color: #fcfcfc;"></i>나중에 볼 동영상</a></li>
+          <li><a href="#" id="setting03_10"><i class="fa-regular fa-thumbs-up" style="color: #fafafa;"></i>좋아요 표시한 동영상</a></li>
+          <li><a href="#" id="setting03_11"><i class="fa-solid fa-download" style="color: #fcfcfd;"></i>오프라인 저장 동영상</a></li>
+          <hr>
+          <li><a href="#" id="setting03_12"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>디글:Diggle</a></li>
+          <li><a href="#" id="setting03_13"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #fafafa;"></i>SBS 뉴스</a></li>
 
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Sidebar -->
+
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar bg-#0F0F0F fixed-top topMenu" data-bs-theme="dark">
+
+    <!-- Container wrapper -->
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <!-- 세줄버튼 -->
+      <div class="d-flex align-items-center">
+      <button class="top01" type="button" >
+        <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
+      </button>
+
+      <!-- Logo-->
+      <a class="navbar-brand logo" id="logo"  href="#logoReturn" >
+        <img
+                src="Logo.png"
+                height="35px;"
+                width="110px;"
+                alt="Logo"
+                loading="lazy"
+        />
+      </a>
+      </div>
+
+      <!-- Search form -->
+        <div class="navbar-collapse searchText d-none d-lg-flex">
+        <form class=" d-md-flex input-group w-auto"  style="flex-wrap: nowrap; min-width: 0;">
+          <input
+                  autocomplete="off"
+                  type="search"
+                  class="topSearch"
+                  placeholder=" 검색"
+                  id="top02"
+          />
+          <button class="" id="top03"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #fafafa;"></i></button>
+          <button class="" id="top04"><i class="fa-solid fa-microphone fa-xl" style="color: #fafafa;"></i></button>
+
+        </form>
+        </div>
+
+
+        <div class="d-flex align-items-center gap-2" id="navbarNav">
+
+
+        <!-- 만들기 -->
+          <div class="dropdown topButton01">
+            <button class="form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="setting04">
+              <a><i class="fa-solid fa-plus fa-xl" style="color: #fcfcfc;"></i>만들기</a>
+            </button>
+
+            <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-play" style="color: #ffffff;"></i>동영상 업로드</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-tower-broadcast" style="color: #fcfcfc;"></i>라이브 스트리밍 시작</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen-to-square" style="color: #fcfcfc;"></i>게시물 작성</a></li>
+            </ul>
+          </div>
+
+          <!-- 알림 종모양 -->
+          <div class="dropdown topButton01">
+            <button class="form-control top01" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-bell fa-lg" style="color: #fcfcfc;"></i>
+            </button>
+
+            <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">알림</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#">중요</a></li>
+              <li><a class="dropdown-item" href="#" style="display: flex; align-items: center; gap: 10px;"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                <div class="videoTitle" style="width: 230px;  white-space: normal; font-size: 13px; display: inline-block; line-height: 1.1; flex:1;">
+                  기안이 취했는데?ㅎㅣ술+비+찐친 = 만취🤪 대낮부터 깡소주 들이킨 기안84와 김대호의 바닥 기기(?) 엔딩ㅣ흙심인대호 11화
+              </div>
+              <img src="https://i1.ytimg.com/vi/DI0Hd2R8LXA/mqdefault.jpg" style="width:90px; height:50px;">
+              </a></li>
+              <li><a class="dropdown-item" href="#" style="display: flex; align-items: center; gap: 10px;"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                <div class="videoTitle" style="width: 230px;  white-space: normal; font-size: 13px; display: inline-block; line-height: 1.1; flex:1;">
+                  설쌤도 당황한 미스터리 행동… 애교 뒤 숨겨진 강아지의 진짜 속마음｜세상에 나쁜 개는 없다｜알고e즘
+                </div>
+                <img src="https://i1.ytimg.com/vi/TNyBoHKBuNs/mqdefault.jpg" style="width:90px; height:50px;">
+              </a></li>
+              <li><a class="dropdown-item" href="#" style="display: flex; align-items: center; gap: 10px;"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                <div class="videoTitle" style="width: 230px;  white-space: normal; font-size: 13px; display: inline-block; line-height: 1.1; flex:1;">
+                  🔥역대급 반전 스릴러🔥IMF가 만들어버린 최악의 가족 [결말포함]
+                </div>
+                <img src="https://i1.ytimg.com/vi/yC9pY2MyzPg/mqdefault.jpg" style="width:90px; height:50px;">
+              </a></li>
+              <hr>
+            </ul>
+          </div>
+
+
+
+        <!--계정 정보 -->
+
+          <div class="dropdown topButton01">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="setting02">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #fcfcfc;"></i>
+            </button>
+
+            <ul class="dropdown-menu setting01" aria-labelledby="dropdownMenuButton1">
+              <li><button class="userIcon" id="userIcon_01"></button>
+                <div class="myIcon">
+                  윤화영<br>@yhy-9rkg<br><a href="#" style="display:block; margin-top:10px;">내 채널 보기</a>
+                </div>
+             </li>
+              <hr>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user fa-sm" style="color: #ffffff;" ></i>YouTube의 내 데이터</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon fa-rotate-180" style="color: #fcfcfc;"></i>디자인: 어두운 테마</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language" style="color: #fcfcfc;"></i>언어:한국어</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-shield" style="color: #fcfcfc;"></i>제한 모드: 사용 안함</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe" style="color: #fafafa;"></i>위치: 한국</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-keyboard" style="color: #ffffff;"  ></i>단축키</a></li>
+              <hr> <!-- 수평가로선 끝맺음 없음 -->
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #f7f9fc;" ></i>설정</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>고객센터</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-circle-exclamation" style="color: #ffffff;" ></i>의견 보내기</a></li>
+            </ul>
+      </div>
+
+
+
+    </div>
+
+
+    </div>
+
+
+  </nav>
+
+
+  <!--content 상단 버튼 -->
+
+
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="contentButton01" role="group" aria-label="First group">
+      <button type="button" class="">전체</button>
+      <button type="button" class="">음악</button>
+      <button type="button" class="">팟캐스트</button>
+      <button type="button" class="">라이브</button>
+      <button type="button" class="">게임</button>
+      <button type="button" class="">믹스</button>
+      <button type="button" class="">시트콤</button>
+      <button type="button" class="">요리</button>
+      <button type="button" class="">피트니스</button>
+      <button type="button" class="">최근에 업로드된 동영상</button>
+      <button type="button" class="">감상한 동영상</button>
+      <button type="button" class="">새로운 맞춤 동영상</button>
+    </div>
+  </div>
+
+
+  <div class="content01">
+
+  <div id="logoReturn"></div>
+    <div id="blurContent"></div>
+
+    <div class="row row-cols-1 row-cols-md-3 play_01" id="play_01" >
+
+    </div>
+
+  </div> <!--content 끝 -->
+  </div> <!--배경 끝 -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="project_01.js"></script>
+<script type="module" src="video.js"></script>
 </body>
 </html>
